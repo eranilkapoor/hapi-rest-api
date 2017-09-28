@@ -4,8 +4,8 @@ const Boom = require('boom');
 const uuid = require('node-uuid');  
 
 const mongojs = require('mongojs'); 
-const db = mongojs('HapiRESTAPI', ['users']);
-
+//const db = mongojs('HapiRESTAPI', ['users']);
+const db = mongojs('mongodb://hapi-js-rest-api:Test@125@ds151024.mlab.com:51024/hapi-js-rest-api', ['users']);
 function UsersModel(){};
 
 /* Get All Users */
