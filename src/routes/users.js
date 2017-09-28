@@ -70,7 +70,8 @@ exports.register = function(server, options, next) {
     });
 
     server.route({  
-        method: 'PATCH',
+        //method: 'PATCH',
+	method: 'PUT',
         path: '/v1/users/{id}',
         handler: usersController.update,
         config: {
